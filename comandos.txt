@@ -1,0 +1,34 @@
+# subir a máquina virtual
+# esse comando liga a máquina virtual com o vagrant
+vagrant up
+
+# entrar na máquina virtual
+vagrant ssh
+
+# entrar na pasta onde está o arquivo docker-compose.yml
+cd /home/vagrant
+
+# rodar os containers do wordpress e mysql
+docker-compose up -d
+
+# verificar se eles estão rodando
+docker ps
+
+# abrir o wordpress no navegador
+# depois que subir os containers, vá no navegador e digite:
+http://localhost:8080
+
+# fazer a instalação do wordpress
+# escolher idioma, criar usuário e senha, e instalar
+
+# criar um post de teste no wordpress
+# 1. acesse o painel (wp-admin)
+# 2. vá em “posts” > “adicionar novo”
+# 3. dê um título e escreva algo no conteúdo
+# 4. clique em “publicar” e depois “visualizar post”
+
+# parar os containers (se precisar)
+docker-compose down
+
+# sair da máquina virtual
+exit
