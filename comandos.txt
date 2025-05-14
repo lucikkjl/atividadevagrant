@@ -5,6 +5,14 @@ vagrant up
 # entrar na máquina virtual
 vagrant ssh
 
+# verificar se o docker está instalado (opcional)
+docker --version
+docker-compose --version
+
+# testar se o docker funciona
+# esse comando roda um container simples que mostra uma mensagem
+docker run hello-world
+
 # entrar na pasta onde está o arquivo docker-compose.yml
 cd /home/vagrant
 
